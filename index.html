@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="import" href="./my-components/index.html" />
+    <title>To do list</title>
+    <script type="module" src="./my-components/script.js"></script>
+  </head>
+  <body>
+
+    <div class="page-layout">
+      <div class="container">
+        <h1 class="main-title">Personal to do list</h1>
+
+        <h4 class="subtitle">
+          Enter text into the input field to add items to your list.
+        </h4>
+
+        <h4 class="subtitle">Click the item to mark it as complete.</h4>
+
+        <div class="input-container">
+          <input type="text" class="to-do-input" placeholder="New item..." />
+
+          <button class="add-button" onclick="handleClick()">
+            <i class="fas fa-pen-fancy"></i>
+          </button>
+        </div>
+
+        <div class="tasks-container" id="tasks-container"></div>
+
+      </div>
+    </div>
+    <script src="assets/script.js"></script>
+
+  </body>
+</html>

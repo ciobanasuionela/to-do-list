@@ -1,0 +1,125 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background: rgb(237,244,195);
+    background: radial-gradient(circle, rgba(237,244,195,1) 0%, rgba(247,199,208,1) 100%);
+}
+
+.page-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 0px;
+}
+
+.container {
+    width: 1200px;
+}
+
+h1.main-title {
+    font-size: 60px;
+    text-align: center;
+    margin: 0px;
+    text-transform: uppercase;
+    color: #708f86;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+h4.subtitle {
+    font-size: 26px;
+    text-align: center;
+    margin: 30px 0px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #8f7079;
+}
+
+.input-container {
+    width: 80%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+input.to-do-input {
+    flex-grow: 1;
+    height: 45px;
+    padding: 0px 15px;
+    -webkit-box-shadow: 7px 6px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 6px 12px 0px rgb(0 0 0 / 28%);
+    border: 1px solid #eaeaea;
+    border-radius: 7px;
+    background: #eaeaea;
+}
+
+input.to-do-input:focus {
+    outline: #eaeaea;
+}
+
+button.add-button {
+    width: 60px;
+    margin-left: 5px;
+    border-radius: 7px;
+    font-size: 25px;
+    background: #708f86;
+    border: none;
+    cursor: pointer;
+    color: #efebc5;
+    -webkit-box-shadow: 4px 4px 5px 0px rgb(41 53 50 / 60%);
+    -moz-box-shadow: 4px 4px 5px 0px rgb(41 53 50 / 60%);
+    box-shadow: 4px 4px 5px 0px rgb(41 53 50 / 60%);
+}
+
+div.tasks-container {
+    padding-top: 30px;
+    width: 65%;
+    margin: 0px auto;
+}
+
+.task-box {
+    background: #708f86;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 9px;
+    color: #fff;
+    -webkit-box-shadow: 4px 4px 5px 0px rgb(41 53 50 / 60%);
+    -moz-box-shadow: 4px 4px 5px 0px rgb(41 53 50 / 60%);
+    box-shadow: 4px 4px 5px 0px rgb(41 53 50 / 60%);
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.task-title {
+    flex-grow: 1;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 15px;
+}
+
+button.done-button {
+    margin-right: 7px;
+    background: none;
+    border: none;
+    color: #edf2c4;
+    cursor: pointer;
+}
+
+button.delete-button {
+    background: none;
+    border: none;
+    color: #f2e0c9;
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+    background: #585d5b;
+}
